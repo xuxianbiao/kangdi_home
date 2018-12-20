@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_car_setting_effect"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="380dp" >
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_car_setting_effect_car" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_alert_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_car_setting_effect_alert_light"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_far_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_car_setting_effect_far_light"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_fog_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_car_setting_effect_fog_light"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_near_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_car_setting_effect_near_light"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_position_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_car_setting_effect_position_light"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_fog01_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/main_car_setting_effect_fog01_light"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_door_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="90dp"
+        android:src="@drawable/main_car_setting_effect_car_door_lock"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_door_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="90dp"
+        android:src="@drawable/main_car_setting_effect_car_door_unlock"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_houbei_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="-32dp"
+        android:src="@drawable/main_car_setting_effect_car_houbei_unlock"
+        android:visibility="invisible" />
+    
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_houbei_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="-32dp"
+        android:src="@drawable/main_car_setting_effect_car_houbei_lock"
+        android:visibility="invisible" />
+
+<!-- 
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_charger_cover_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/main_car_setting_effect_car_charger_cover_lock"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_charger_cover_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/main_car_setting_effect_car_charger_cover_unlock"
+        android:visibility="invisible" />
+ -->
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_battery_door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:background="@null"
+        android:visibility="visible" />
+    <!-- android:background="@drawable/main_car_setting_effect_car_battery_door_open_4" -->
+<!-- 
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_battery_door_down_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/main_car_setting_effect_car_battery_door_down"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/main_car_setting_effect_car_battery_door_up_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/main_car_setting_effect_car_battery_door_up"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-150dp"
+        android:layout_marginRight="-230dp" >
+
+        <ImageButton
+            android:id="@+id/btnMainCarSettingBetteryDoorOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66dp"
+            android:background="@null"
+            android:gravity="right"
+            android:src="@drawable/main_car_setting_btn_bettery_door_down"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnMainCarSettingBetteryDoorClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:src="@drawable/main_car_setting_btn_bettery_door_up"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+-->
+    
+</FrameLayout>

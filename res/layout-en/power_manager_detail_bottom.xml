@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/chart_title_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cam_tab_1_bg" >
+
+        <RelativeLayout
+            android:id="@+id/nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="40dp" >
+
+            <ImageView
+                android:id="@+id/dianliu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/energy_detail_tap_voltage_on"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/gonglv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/dianliu"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:src="@drawable/energy_tap_effect_on"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/soc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/gonglv"
+                android:gravity="center"
+                android:src="@drawable/energy_detail_tap_temperature_on"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chart_title_area"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/energy_coordinate_bg" >
+
+        <com.kandi.customview.BarChatView 
+            android:layout_width="match_parent"
+        	android:layout_height="300dip"
+        	android:id="@+id/barChartVoltView"
+        	android:visibility="visible"
+            />
+        <com.kandi.customview.BarChatView 
+            android:layout_width="match_parent"
+        	android:layout_height="300dip"
+        	android:id="@+id/barChartTempView"
+            android:visibility="visible"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

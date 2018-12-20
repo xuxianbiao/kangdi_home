@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp" >
+	
+    <ImageView
+        android:id="@+id/imageAirIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="#000" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageAirIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/cam_data" />
+    
+    <TextView
+        android:id="@+id/filepath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageAirIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" 
+        android:visibility="gone"
+        />
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/lockimg"
+	    android:src="@drawable/camera_image_control_lock"
+	    android:layout_centerInParent="true"
+	    />
+</RelativeLayout>

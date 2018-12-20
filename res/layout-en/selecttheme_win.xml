@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bigbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_shape"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/home_skin_bg" >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:columnCount="3"
+            android:rowCount="2"
+            android:useDefaultMargins="true" >
+
+            <LinearLayout
+                android:id="@+id/pic1ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/pic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+	                android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_skin_01" />
+
+                <TextView
+                    android:id="@+id/pic1txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/moon_under_sea" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pic2ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/pic2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_skin_02" />
+
+                <TextView
+                    android:id="@+id/pic2txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/distance_road" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pic3ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/pic3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_skin_03" />
+
+                <TextView
+                    android:id="@+id/pic3txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/still_water_galaxy" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pic4ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/pic4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_skin_04" />
+
+                <TextView
+                    android:id="@+id/pic4txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/the_snow" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pic5ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/pic5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_skin_05" />
+
+                <TextView
+                    android:id="@+id/pic5txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/moonlit_clouds" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/pic6ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/pic6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_skin_06" />
+
+                <TextView
+                    android:id="@+id/pic6txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/stars_dawn" />
+            </LinearLayout>
+            
+            </GridLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/testbtn"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

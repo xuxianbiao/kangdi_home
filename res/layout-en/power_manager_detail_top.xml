@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:src="@drawable/power_back_btn_selector"
+                android:visibility="invisible" />
+
+                <LinearLayout
+		            android:layout_width="350dp"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+
+		            <TextView
+	                    android:id="@+id/bat_name"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_horizontal"
+	                    android:layout_marginLeft="45dp"
+	                    android:text="@string/batteries_a"
+	                    android:textColor="@android:color/white"
+	                    android:textSize="30sp" />
+		            <ImageView
+		                android:id="@+id/battery_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_horizontal"
+		                android:layout_marginLeft="45dp"
+		                android:src="@drawable/energy_bat_010" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chager_number_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-10dp"
+                android:text="@string/default_nothing"                android:textColor="@android:color/white"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/battery_baifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/soc_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/dump_energy"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/soctv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/soc_text"
+                    android:singleLine="true"
+                    android:text="@string/default_percent"
+                    android:textColor="@color/blue"
+                    android:textSize="40sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battery_baifen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/energy_detail_title_xian" />
+
+            <LinearLayout
+                android:id="@+id/info_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/battery_baifen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" >
+
+                <TableLayout
+                    android:id="@+id/info_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="1" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/total_voltage"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvOverallVol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/unit_v"
+                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/total_current"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/dianchidianliutv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/unit_a"
+                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/cell_total_voltage"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvCellMaxVolt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/unit_mv"
+                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/cell_low_voltage"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvCellMinVolt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/unit_mv"
+                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/total_degree"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvBattaryMaxTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/unit_degree"
+                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/low_degree"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvBattaryMinTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/unit_degree"
+                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/insulation_r"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/jueyuandianzutv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/unit_insulation_r"
+                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/battery_baifen"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/info_left"
+                    android:shrinkColumns="1"
+                    android:visibility="gone" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/flag1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/title_soh"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvSOH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/unit_percent"
+                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/title_hardware_version"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/yingjianbanbentv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/default_nothing"                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/title_software_version"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/ruanjianbanbentv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/default_nothing"                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/title_charge_count"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/chongdiancisutv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/default_nothing"                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/title_charge_state"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/chongdianzhuangtaitv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/default_nothing"                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/title_battery_safe"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/dianchianquanxingtv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/default_nothing"                            android:textColor="@color/bule"
+                            android:textSize="20sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dianchibianmatv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_table"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="@string/unit_default_null"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_car_setting_btnset1_bg" >
+
+    <ImageButton
+        android:id="@+id/light1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:src="@drawable/car_top_light_1" />
+
+    <ImageButton
+        android:id="@+id/light2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginLeft="-22dp"
+        android:layout_toRightOf="@+id/light1"
+        android:background="@null"
+        android:src="@drawable/car_top_light_2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-22dp"
+        android:layout_toRightOf="@+id/light2"
+        android:background="@null"
+        android:src="@drawable/car_top_light_3" />
+
+</RelativeLayout>

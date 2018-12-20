@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/stateview"
+        android:layout_width="566dp"
+    	android:layout_height="620dp"
+    	android:background="@drawable/gearshift_bg"
+        >
+        
+        <ToggleButton 
+            android:id="@+id/state_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/toggle_d_selector"
+            android:textColor="@color/white"
+            android:textOff=""
+            android:textOn=""
+            />
+
+        <ToggleButton
+            android:id="@+id/state_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/state_d"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/toggle_n_selector"
+            android:textColor="@color/white"
+            android:textOff=""
+            android:textOn=""
+            />
+
+        <ToggleButton
+            android:id="@+id/state_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/state_n"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/toggle_r_selector" 
+            android:textColor="@color/white"
+            android:textOff=""
+            android:textOn=""
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageButton
+        android:id="@+id/bg_mask_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.95"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/view_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" >
+
+        <FrameLayout
+            android:id="@+id/nav"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/tap_line" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/tann_manager_nav_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transbutton_title_168_76"
+                    android:contentDescription="@null"
+                    android:src="@drawable/cam_tab_title_forward_on" />
+
+                <ImageButton
+                    android:id="@+id/tann_manager_nav_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/transbutton_title_168_76"
+                    android:src="@drawable/cam_tab_title_backward_off"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/canmare"
+            android:layout_width="fill_parent"
+            android:layout_height="370dp"
+            android:layout_below="@+id/nav"
+            android:layout_marginTop="-60dp"
+            android:background="@null" >
+
+            <SurfaceView
+                android:id="@+id/canmare_surfaceview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <SurfaceView
+                android:id="@+id/video_surfaceview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/canmare_pic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="#000" />
+
+            <ImageButton
+                android:id="@+id/canmare_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/camera_image_play" />
+        </FrameLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_btn_zone"
+            android:background="@drawable/cam_opt_bg"
+            android:minHeight="6dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:progressDrawable="@drawable/seekbar_background"
+            android:thumb="@drawable/thumb_bar" />
+        
+        <RelativeLayout
+            android:id="@+id/layout_btn_zone"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/canmare"
+            android:background="@drawable/cam_opt_bg" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="@style/custProgress"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/media_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:src="@drawable/cam_opt_btn_play" />
+
+                <ImageButton
+                    android:id="@+id/media_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:src="@drawable/cam_opt_btn_next" />
+
+                <TextView
+                    android:id="@+id/media_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/cam_opt_btn_next"
+                    android:text="@string/default_cam_time1" />
+
+                <TextView
+                    android:id="@+id/media_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cam_opt_btn_next"
+                    android:text="@string/default_cam_time2" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/media_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:src="@drawable/cam_opt_btn_return" />
+
+            <ImageButton
+                android:id="@+id/lockbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/media_back"
+                android:background="@null"
+                android:src="@drawable/camera_image_control_lock"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/deletebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/lockbtn"
+                android:background="@null"
+                android:src="@drawable/camera_image_control_delet"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/layout_btn_zone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <GridView
+                    android:id="@+id/history_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="240dp"
+                    android:divider="@drawable/cam_listview_devil"
+                    android:fadingEdge="@null"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:verticalSpacing="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/loadingView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="80dp"
+                android:background="#8F000000"
+                android:clickable="true" >
+
+                <ProgressBar
+                    android:id="@+id/pbar"
+                    style="@style/custProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pbar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/movie_list_load"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

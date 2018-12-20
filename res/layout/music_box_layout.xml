@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <FrameLayout
+            android:id="@+id/music_disc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="73dp" >
+
+            <ImageView
+                android:id="@+id/music_box_changpian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/music_record_cd_bg" />
+
+            <ImageView
+                android:id="@+id/music_box_changpian2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/music_record_cd" />
+
+            <ImageView
+                android:id="@+id/music_box_now"
+                android:layout_width="215dp"
+                android:layout_height="215dp"
+                android:layout_gravity="center"
+                android:src="@drawable/music_record_cd_default" />
+
+            <ImageView
+                android:id="@+id/music_box_cd_light"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/music_record_cd_light" />
+
+            <ImageView
+                android:id="@+id/music_box_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/music_record_cd_centre" />
+        </FrameLayout>
+        
+        <ImageView
+            android:id="@+id/music_box_flag_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="-5dp"
+            android:src="@drawable/music_box_flag_play2" />
+
+        
+    </FrameLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="50dp"/>
+</LinearLayout>

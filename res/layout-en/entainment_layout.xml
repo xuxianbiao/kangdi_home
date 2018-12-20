@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootview">
+
+    <!-- 顶部类似tab的指示器 -->
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/tap_line"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <ImageButton
+                android:id="@+id/entainment_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:contentDescription="@null"
+                android:src="@drawable/music_tap_videoplay_on" />
+            <!-- <ImageButton
+                android:id="@+id/entainment_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="#00000000"
+                android:contentDescription="@null"
+                android:src="@drawable/music_tap_videoplay_on" />
+
+            <ImageButton
+                android:id="@+id/entainment_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="#00000000"
+                android:src="@drawable/music_tap_musicplay_on" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 这个是用来壮哉fragment的layout容器，默认装载的是“音乐播放”，也可以装载“视频播放” -->
+
+    <FrameLayout
+        android:id="@+id/entainment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/nav"
+        android:layout_marginTop="10dp" />
+    
+    <FrameLayout
+        android:id="@+id/entainment_container2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/nav"
+        android:visibility="gone"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

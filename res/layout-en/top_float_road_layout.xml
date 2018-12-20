@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/top_float_road_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/home_tophalf_icon_km" />
+
+    <TextView
+        android:id="@+id/top_float_road_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/top_float_road_flag"
+        android:textColor="#ffffff"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/top_float_road_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/top_float_road_textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/top_float_road_textView"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

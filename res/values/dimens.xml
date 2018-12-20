@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    
+    
+    <dimen name="linechartscrollwidth">1000dp</dimen>
+    <dimen name="linechartscrollheight">340dp</dimen>
+    <dimen name="linechartpowerscrollheight">370dp</dimen><!-- power滚动条高 -->
+    <dimen name="linechartmxval">10dp</dimen>
+    <dimen name="linechartmyval">250dp</dimen><!-- 调节温度最高点反比 -->
+    <dimen name="linecharthumval">280dp</dimen><!-- 调节湿度最高点反比 -->
+    <dimen name="linechartbottomy">300dp</dimen>
+    <dimen name="linechartpointpaintstrokewidth">13dp</dimen>
+    <dimen name="linecharttextpaintstrokewidth">3dp</dimen>
+    <dimen name="linecharttextpaintsize">13dp</dimen>
+    <dimen name="linechartlinepaintstrokewidth">0.3dp</dimen>
+    <dimen name="linechartsloperate">40dp</dimen><!-- 间距 -->
+    <dimen name="linechartpointradius">1.6dp</dimen>
+    <dimen name="linecharttoptxtdeviation">4dp</dimen>
+    <dimen name="linechartbottomtxtdeviation">1dp</dimen>
+    <dimen name="linechartpointicondeviation">4.66dp</dimen>
+    <dimen name="linechartscrolltopmartin">50dp</dimen>
+    <dimen name="linechartpasshourlbltopmargin">8dp</dimen>
+    <dimen name="linechartcurrenttemperatureareawidth">150dp</dimen>
+    <dimen name="linechartcurrenttemperaturearealeftmargin">30dp</dimen>
+    <dimen name="linechartcurrenttemperatureareatopmargin">50dp</dimen>
+    <dimen name="linechartcurrenttemperaturetxtleftmargin">10dp</dimen>
+    <dimen name="linechartcelsiustopmargin">35dp</dimen>
+    <dimen name="ssd_margintop">15dp</dimen>
+    <dimen name="electrict_now_blue">12dp</dimen>
+    <dimen name="linechartbottomareaheight">180dp</dimen>
+    <dimen name="linechartlefttxtdeviation">10dp</dimen>
+    <dimen name="linecharttipheight">20dp</dimen>
+    <dimen name="linechartbottomcontenttopmargin">15dp</dimen>
+    <dimen name="linechar_allheight">150dp</dimen><!-- 总高度反比 -->
+    <dimen name="linechar_tempallheight">160dp</dimen><!-- 总高度反比 -->
+    <dimen name="linechartscrollpowerwidth">410dp</dimen>
+    <dimen name="line_ypy">20dp</dimen>
+    <dimen name="electrice_wmargintop">15dp</dimen>
+    <dimen name="powerbarxwidth">110dp</dimen>
+    <dimen name="powerbarywidth">140dp</dimen>
+    <dimen name="linechartmxval_nowpy">9dp</dimen>
+    <dimen name="ytextpy">10dp</dimen>
+    <dimen name="linechartpowerbottomy">310dp</dimen><!-- power最低值 -->
+    
+    
+    
+    <!-- barchart -->
+    <dimen name="barchartscrollpowerheight">280dp</dimen><!-- powerbar高 -->
+    <dimen name="barchartscrollbodyheight">330dp</dimen><!-- powerbar高 -->
+    <dimen name="barchartscrollbodytextheight">230dp</dimen>
+    <dimen name="barchartscrollwidth">850dp</dimen>
+    <dimen name="barchartscrollheight">300dp</dimen>
+    <dimen name="barcpowerhartscrollheight">320dp</dimen>
+    <dimen name="barchartgrowthmargin">33.33dp</dimen>
+    <dimen name="barchartmxval">20dp</dimen>
+    <dimen name="barchartmyval">0dp</dimen>
+    <dimen name="barchartbottomtxtdeviation">16dp</dimen><!--x坐标值向下偏移量  -->
+    <dimen name="barcharttoptxtdeviation">18.66dp</dimen>
+    <dimen name="barchartbarspacing">16.66dp</dimen>
+    <dimen name="barchartpowerbottomy">250dp</dimen><!-- 功率最低值 -->
+    <dimen name="barchartbottomy">275dp</dimen><!-- 光照最低值 -->
+    <dimen name="bodybarcharbottomy">300dp</dimen><!-- 体感最低值 -->
+    <dimen name="barLumAllHeight">28dp</dimen><!-- 光照柱高度比例 -->
+    <dimen name="barBodyAllHeight">18dp</dimen><!-- 体感柱高度比例 -->
+    <dimen name="bodytextsize">40sp</dimen><!-- 体感柱时间 -->
+    <dimen name="lummaxheight">60dp</dimen><!-- 光照柱最高点 -->
+    <dimen name="powerlummaxheight">90dp</dimen><!-- power柱最高点 -->
+    <dimen name="bodymaxheight">150dp</dimen><!-- 体感柱最高点 -->
+    <dimen name="af_marginbuttom">65dp</dimen><!--  -->
+    <dimen name="text_marginbuttom">15dp</dimen><!--  -->
+</resources>

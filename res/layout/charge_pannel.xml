@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bgview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view_bg"
+    android:orientation="vertical" >
+
+    <com.kandi.customview.HomeMileView
+        android:id="@+id/charingtxtarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hmv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" >
+        
+    </com.kandi.customview.HomeMileView>
+    
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/charingtxtarea"
+	    >
+
+        <ImageView
+            android:id="@+id/chargingpercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="280dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/charging_car_effect_chassis_energy_block21"
+            android:visibility="gone" />
+
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="280dp"
+	        android:contentDescription="@string/contentDescription"
+	        android:src="@drawable/charging_car_effect_chassis_bg"
+	        android:visibility="gone" />
+
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:id="@+id/carimg"
+	        android:src="@drawable/charging_car_effect_car_abnormal"
+	        android:contentDescription="@string/contentDescription"
+	        />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:src="@drawable/charging_car_effect_charging_3"
+	        android:contentDescription="@string/contentDescription"
+	        android:id="@+id/chargingcable"
+	        android:layout_marginLeft="280dp"
+	        android:layout_marginTop="144dp"
+	        />
+<FrameLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+	        android:layout_marginTop="50dp"
+    >
+	   
+	         <ImageView
+	        android:id="@+id/incharge_state"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/battery_incharge_00033" />
+	           <TextView 
+	         android:id="@+id/charge_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/default_nothing"
+	        android:textColor="@color/white"
+	        android:textSize="28sp"
+	        android:layout_marginRight="25dp"
+	        android:layout_gravity="bottom|right"
+	        android:layout_marginBottom="10dp"
+	        />
+</FrameLayout>
+	</FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        >
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/energy_left_selector"
+            android:id="@+id/energyleftbtn"
+            android:contentDescription="@string/contentDescription"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="50dp"
+            />
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/energyleftbtn"
+            android:background="@drawable/energy_modular_bg"
+            >
+            <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/energy_bat_030"
+	            android:contentDescription="@string/contentDescription"
+	            android:layout_centerInParent="true"
+	            android:id="@+id/batteryimg1"
+	            />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/batteryimg1"
+                android:text="@string/batteries_a"
+                android:id="@+id/batterygroupa"
+                android:layout_marginTop="40dp"
+                android:textSize="28sp"
+                android:layout_marginLeft="80dp"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/batteryimg1"
+                android:layout_toRightOf="@+id/batterygroupa"
+                android:text="@string/percent"
+                android:textSize="34sp"
+                android:layout_marginTop="30dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/energyright"
+            android:background="@drawable/energy_modular_bg"
+            
+            >
+            <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/energy_bat_030"
+	            android:contentDescription="@string/contentDescription"
+	            android:layout_centerInParent="true"
+	            />
+        </RelativeLayout>
+        
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/energy_right_selector"
+            android:id="@+id/energyright"
+            android:contentDescription="@string/contentDescription"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="50dp"
+            />
+    </RelativeLayout>
+	<HorizontalScrollView
+        android:id="@+id/power_mainview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linechartpowerscrollheight"
+        android:layout_marginTop="@dimen/linechartscrolltopmartin" >
+
+        <LinearLayout
+            android:layout_width="@dimen/linechartscrollwidth"
+            android:layout_height="@dimen/linechartpowerscrollheight"
+            android:background="@null" >
+
+            <com.kandi.customview.SuperLineChartView
+                android:id="@+id/power_line"
+                android:layout_width="@dimen/linechartscrollwidth"
+                android:layout_height="@dimen/linechartpowerscrollheight" >
+            </com.kandi.customview.SuperLineChartView>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bigbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_shape"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/home_skin_bg2" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/home_title_chenshi" />
+
+        <EditText
+            android:id="@+id/net_address"
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="58dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/set_edittext_bg"
+            android:drawableLeft="@drawable/web_btn_search_selector"
+            android:ems="10"
+            android:hint="@string/input_city"
+            android:imeOptions="actionGo"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_sure_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/net_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/confirm_btn_selector" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

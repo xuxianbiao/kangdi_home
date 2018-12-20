@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="item_common_pressed">#e0e0e0</color>
+    <color name="item_common_selected">#5e5e5e</color>
+    <color name="item_footer">#e0e0e0</color>
+    <color name="background_common">#f2f1f0</color>
+    <color name="background_player">#fafaf9</color>
+    <color name="background_playlist">#e7e5e2</color>
+    <color name="background_menu_divider">#d0d0d0</color>
+    <color name="background_menu">#e0e0e0</color>
+    <color name="font_default">#222222</color>
+    <color name="font_light">#777777</color>
+    <color name="bule">#79d8ef</color>
+    <color name="orange">#ffbb33</color>
+    <color name="darkorange">#ff8800</color>
+    <color name="darkerorange">#ff7200</color>
+    <color name="black">#000001</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_dialog">#00FFFFFF</color>
+    <color name="transparent_gray">#8000</color>
+    <color name="transparent_white">#dcfafafa</color>
+    <color name="action_bar_title">#FFFFFF</color>
+    <color name="darkgrey">#ffa0a0a0</color>
+    <color name="background_remote">#ff323232</color>
+    <color name="banner_pop_bg">#80323232</color>
+
+    <color name="black1">#0f0f0f</color>
+    <color name="black2">#222222</color>
+    <color name="black3">#181818</color>
+
+    <color name="grey1">#393939</color>
+    <color name="grey2">#d0d0d0</color>
+    <color name="grey3">#C0C0C0</color>
+
+    
+    <color name="energy_chart_coordi_grid">#808080</color>
+    <color name="energy_chart_coordi_text">#808080</color>
+    <color name="energy_chart_line">#FFFFFF</color>
+    <color name="energy_chart_value_text">#ffffff</color>
+    <color name="energy_chart_value_text_vertical">#808080</color>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <drawable name="ab_bg_black">#aa000000</drawable>
+	<color name="device_text_normal">#455067</color>
+	<color name="device_text_press">#eff9fd</color>
+	<color name="device_list1">#d0d3d9</color>
+	<color name="device_list2">#c1c5cc</color>
+	<color name="device_text_3">#8f9ba7</color>
+	
+	<color name="none_color">#00000000</color>
+	<color name="netconfigure_tabselected_color">#8b8b99</color>
+	
+	<color name="on_text">#FFFFFF</color><!-- switch开启时文字颜色 -->
+    <color name="off_text">#5B5B5B</color><!-- switch关闭时文字颜色 -->
+    
+    <color name="timer_notimer">#656e80</color>
+    <color name="timerlist_light">#FFFFFF</color>
+    <color name="timerlist_dark">#8d99b0</color>
+    <color name="timerlist_time">#455067</color>
+    
+    <color name="blue">#00a0e9</color>
+    <color name="red">#e83828</color>
+    <color name="scene_blue">#0099CC</color>
+    <color name="scene_dark_blue">#1B7181</color>
+    <color name="scene_light_gray">#CCCCCC</color>
+    <color name="scene_dark_gray">#666666</color>
+    <color name="scene_gray">#999999</color>
+    
+    
+    <color name="air_s0">#999999</color>
+    <color name="air_s1">#0db26d</color>
+    <color name="air_s2">#e44443</color>
+    <color name="air_s3">#00a0e9</color>
+    <color name="air_bg">#333333</color>
+    
+    <color name="device_button_font">#8b8b89</color>
+    <color name="device_online_font">#4fc4ae</color>
+    
+    <color name="electrict_power_text">#abafb8</color>
+    <color name="electrict_power_bg">#f1f1f1</color>
+    <color name="ddinfo_bg">#f7f8f8</color>
+
+    <color name="transparent_background">#4000</color>
+
+    <color name="faq_title_dark">#d0d3d9</color>
+    <color name="faq_title_light">#c1c5cc</color>
+    
+    <color name="roundprogresscolor_default">#d3d3d3</color>
+    <color name="roundprogresscolor">#009de6</color>
+    
+
+    <color name="gray">#717171</color>
+    
+    <color name="batterytitlecolor">#FF44D8F6</color>
+    
+    <drawable name="translucent">#00000000</drawable>
+    
+    <color name="half_transparent">#4f000000</color>
+    
+    <color name="blackish_green">#4ea94c</color>
+    <color name="dark_yellow">#ffeb43</color>
+    
+   
+    
+    
+
+
+</resources>

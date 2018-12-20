@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	 android:layout_height="match_parent"
+ 	 android:layout_width="match_parent"
+    android:id="@+id/bgview"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/music_file_bg"
+        android:id="@+id/mainview"
+        >
+        <FrameLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="80dp"
+	            android:layout_marginTop="30dp"
+	            android:orientation="horizontal" >
+	
+	            <ImageButton
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@null"
+	                android:id="@+id/localmusicbtn"
+	                android:src="@drawable/music_file_tap_locality_music_on" />
+	
+	            <ImageButton
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="60dp"
+	                android:background="@null"
+	                android:visibility="gone"
+	                android:src="@drawable/music_file_tap_lanya_on" />
+	
+	            <ImageButton
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="60dp"
+	                android:background="@null"
+	                android:id="@+id/usbmusicbtn"
+	                android:src="@drawable/music_file_tap_usb_on" />
+	
+	            <ImageButton
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="60dp"
+	                android:background="@null"
+	                android:visibility="gone"
+	                android:src="@drawable/music_file_tap_shoucang_on" />
+	            
+	            <ImageButton
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="90dp"
+	                android:id="@+id/refreshfilebtn"
+	                android:background="@null"
+	                android:src="@drawable/recreation_refresh" />
+	        </LinearLayout>
+	
+	        <ImageView
+	            android:id="@+id/iv_music_nextline"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/music_file_light" />
+	    </FrameLayout>
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="468dp"
+	    >
+	  
+	    <ListView
+	        android:id="@+id/linearListView"
+	        android:layout_width="match_parent"
+	        android:layout_height="468dp"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:divider="@drawable/music_file_xian"
+	        android:dividerHeight="1dp"
+	        android:fadingEdge="none"
+	        android:listSelector="@android:color/transparent"
+	        android:padding="20dp" />
+	      <ProgressBar 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="200dp"
+	        style="@style/custProgress"
+	        android:id="@+id/pb_music_usbload"
+	        android:visibility="gone"
+	        />    
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="center_horizontal" >
+
+	            <Button
+	                android:id="@+id/bt_select_all"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="10dp"
+	                android:text="@string/txt_all"
+	                android:background="@drawable/btn_small_selector"
+	                android:visibility="gone" />
+	            
+	            <Button
+	                android:id="@+id/bt_delete_select"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="10dp"
+	                android:text="@string/txt_delete"
+	                android:background="@drawable/btn_small_selector"
+	                android:visibility="gone" />
+
+	            <Button
+	                android:id="@+id/bt_import_select"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="10dp"
+	                android:text="@string/txt_import"
+	                android:background="@drawable/btn_small_selector"
+					android:visibility="gone" />
+
+	            <Button
+	                android:id="@+id/bt_cancel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txt_cancel"
+	                android:background="@drawable/btn_small_selector"
+	                android:visibility="gone" />
+	            
+	            <TextView 
+	                android:id="@+id/txt_progress"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/white"
+	                android:textSize="20sp" />
+	        </LinearLayout>
+	    </FrameLayout>
+
+    </LinearLayout>
+    
+
+</RelativeLayout>

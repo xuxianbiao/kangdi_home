@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/home_tophalf_icon_energy_0"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/home_tophalf_icon_energy_1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/home_tophalf_icon_energy_2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/home_tophalf_icon_energy_3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/home_tophalf_icon_energy_4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/home_tophalf_icon_energy_5"
+        android:duration="200"/>
+
+</animation-list>

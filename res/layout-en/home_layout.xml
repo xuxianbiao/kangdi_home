@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bgview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01_01" >
+
+    <RelativeLayout
+        android:id="@+id/toparea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp" >
+
+	  <!-- <com.kandi.customview.HomeWeatherView
+      		android:id="@+id/hwv"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content" >
+      </com.kandi.customview.HomeWeatherView> -->
+ 	  <ImageButton
+                android:id="@+id/themebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@null"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/home_tophalf_skin_selector" />
+ 	  
+ 	  			<TextView
+                    android:id="@+id/timelab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/themebtn"
+                    android:text="@string/default_time"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/datelab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="50dp"
+                    android:text="@string/default_data"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/dateday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/datelab"
+                    android:layout_below="@+id/datelab"
+                    android:text="@string/default_dataday"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+         
+    </RelativeLayout>
+
+    <com.kandi.customview.HomeMileView
+        android:id="@+id/charingtxtarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toparea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" >
+    </com.kandi.customview.HomeMileView>
+
+    <TextView
+        android:id="@+id/charging_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charingtxtarea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:clickable="true"
+        android:text="@string/charging"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:visibility="gone" />
+    
+    <RelativeLayout
+    	android:id="@+id/relativeLayout1"
+        android:layout_below="@+id/charingtxtarea"
+        android:layout_marginTop="40dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/smallmusic"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/small_music_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/smallbluemusic"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/small_bluemusic_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/smallradio"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            layout="@layout/small_radio_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/web_view_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topnav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/navbtn0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/web_icon_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navbtn0"
+                android:layout_centerHorizontal="true"
+                android:text="@string/kangdi" />
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <ImageButton
+                android:id="@+id/navbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/web_icon_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navbtn1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/google" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <ImageButton
+                android:id="@+id/navbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/web_icon_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navbtn2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/facebook" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <ImageButton
+                android:id="@+id/navbtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/web_icon_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navbtn3"
+                android:layout_centerHorizontal="true"
+                android:text="@string/twitter" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <ImageButton
+                android:id="@+id/navbtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/web_icon_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navbtn4"
+                android:layout_centerHorizontal="true"
+                android:text="@string/youtobe" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <ImageButton
+                android:id="@+id/navbtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/web_icon_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navbtn5"
+                android:layout_centerHorizontal="true"
+                android:text="@string/amazon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/explist"
+        android:layout_width="600dp"
+        android:layout_height="550dp"
+        android:layout_below="@+id/topnav"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000" >
+    </ExpandableListView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="600dp"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/explist"
+        android:layout_centerHorizontal="true"
+        android:src="@color/white" />
+
+</RelativeLayout>

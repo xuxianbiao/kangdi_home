@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cellview"
+    android:padding="10dp"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/height_linearListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/popular"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:button="@drawable/check_style"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/music_file_icon_pause" 
+        android:visibility="gone" />
+
+</RelativeLayout>

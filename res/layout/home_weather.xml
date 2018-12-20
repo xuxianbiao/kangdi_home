@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:id="@+id/weathericonll"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="45dp"
+       >
+       <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/weather_4_58"
+        android:id="@+id/weathericon"
+        android:background="@null"
+        />
+   </LinearLayout>
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_toRightOf="@+id/weathericonll"
+       >
+       
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+
+           <TextView
+               android:id="@+id/temperaturetxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/default_nothing"
+               android:textColor="@color/white"
+               android:textSize="35sp" />
+           
+           <TextView
+               android:id="@+id/city"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/default_nothing"
+               android:textColor="@color/white"
+               android:textSize="14sp" />
+       </LinearLayout>
+		
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginLeft="8dp" >
+
+           <TextView
+               android:id="@+id/weathertxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/no_weather"
+               android:textColor="@color/white"
+               android:textSize="14sp"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="3dp" />
+
+           <ImageButton
+               android:id="@+id/bt_refresh"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@null"
+               android:src="@drawable/home_tianqi_shuaxing"
+               android:padding="10dp" />
+       </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>

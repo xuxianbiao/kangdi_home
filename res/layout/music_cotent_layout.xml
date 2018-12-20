@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.kandi.widget.MediaPlayertextview
+        android:id="@+id/music_time_textview"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/default_music_title"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <com.kandi.widget.MediaPlayertextview
+        android:id="@+id/blue_music_time_textview"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/default_nothing"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <SeekBar
+            android:id="@+id/imageView_progress"
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:max="100"
+            android:minHeight="12dp"
+            android:progressDrawable="@drawable/seekbar_background"
+            android:thumb="@drawable/thumb_bar" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/imageView_progress"
+            android:text="@string/default_counttime"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView_progress"
+            android:text="@string/default_counttime"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        
+        <TextView
+	        android:id="@+id/blue_time"
+	        android:layout_width="600dp"
+	        android:layout_height="42dp"
+	        android:layout_gravity="center_horizontal"
+	        android:gravity="center"
+	        android:text="@string/default_nothing"
+	        android:textColor="@color/white"
+	        android:textSize="18sp"
+	        android:visibility="gone" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/music_qian_btn_selector" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn1"
+            android:background="@null"
+            android:src="@drawable/music_start_btn_selector" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn2"
+            android:background="@null"
+            android:src="@drawable/music_hou_btn_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

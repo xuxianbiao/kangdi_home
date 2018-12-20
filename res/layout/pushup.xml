@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bigbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_shape"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/home_skin_bg2" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/firmup"
+            android:textSize="25sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/up_info"
+            android:layout_width="365dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="58dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/set_edittext_bg"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="false"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/up_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/up_delay"
+            android:layout_alignBottom="@+id/up_delay"
+            android:layout_centerHorizontal="true"
+            android:text="@string/upsubmit" />
+
+        <Button
+            android:id="@+id/up_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/up_submit"
+            android:layout_alignBottom="@+id/up_submit"
+            android:layout_alignRight="@+id/up_info"
+            android:text="@string/upcancel" />
+
+        <Button
+            android:id="@+id/up_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/up_info"
+            android:layout_below="@+id/up_info"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/updelay" />
+
+        <Button
+            android:id="@+id/up_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/up_submit"
+            android:layout_below="@+id/up_info"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/upcompete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

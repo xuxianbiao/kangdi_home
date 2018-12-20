@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="400dp">
+
+   <LinearLayout 
+	    android:layout_width="400dp"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/linear_layout"
+	    android:orientation="vertical" >
+     <ToggleButton
+            android:id="@+id/teamAPOpenTog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"   
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_selector"
+            android:textColor="@color/white"
+            android:textOff=""
+            android:textOn="" />
+       <TextView
+	       android:id="@+id/controlpowertxt"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="10dp"
+	       android:layout_marginLeft="10dp"
+	       android:text="@string/wifi_ap_notice_close"
+	       android:textColor="@color/darkgrey"
+	       android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/set_wifi_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/net_name"
+        android:textColor="@color/darkgrey"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/set_wifi_password_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/net_pwd"
+        android:textColor="@color/darkgrey"
+        android:textSize="20sp" />
+    
+	<TextView
+        android:id="@+id/Connect_Ap_Num_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/connect_device"
+        android:textColor="@color/darkgrey"
+        android:textSize="20sp"
+        android:visibility="invisible" />   
+	<ListView
+	    android:id="@+id/wifi_Aplistview"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:visibility="invisible"	/>
+</LinearLayout>
+</RelativeLayout>

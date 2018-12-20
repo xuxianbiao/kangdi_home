@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="weather_condition">
+        <item>Sunny</item>
+        <item>Cloudy</item>
+        <item>Overcast</item>
+        <item>Rain</item>
+        <item>Light rain</item>
+        <item>Light to moderate rain</item>
+        <item>Moderate rain</item>
+        <item>Moderate to heavy rain</item>
+        <item>Heavy rain</item>
+        <item>Heavy to torrential rain </item>
+        <item>Rainstorm</item>
+        <item>Heavy rainstorm</item>
+        <item>Heavy rainstorm</item>
+        <item>Severe rainstorm</item>
+        <item>Severe rainstorm</item>
+        <item>Shower</item>
+        <item>Thunder shower</item>
+        <item>Freezing rain</item>
+        <item>Thunderstorm with hail</item>
+        <item>Snow</item>
+        <item>Sleet</item>
+        <item>Snow flurry</item>
+        <item>Light snow</item>
+        <item>Light to moderate snow</item>
+        <item>Moderate snow</item>
+        <item>Moderate to heavy snow</item>
+        <item>Heavy snow</item>
+        <item>Heavy snow to blizzard</item>
+        <item>Blizzard</item>
+        <item>Fog</item>
+        <item>Haze</item>
+        <item>Floating dust</item>
+        <item>Blowing sand</item>
+        <item>Sandstorm</item>
+        <item>Heavy sandstorm</item>
+        <item>Haze</item>
+    </string-array>
+
+</resources>

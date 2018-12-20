@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/layout_a_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+         >
+
+        <RelativeLayout
+            android:id="@+id/nav"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/soc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="118dp"
+                android:visibility="visible"
+                android:src="@drawable/energy_tap_soc_on"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/gonglv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/soc"
+                android:gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/energy_tap_effect_off"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/dianliu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/gonglv"
+                android:gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/energy_tap_current_off"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_a_bottom" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/timedragbg"
+            android:background="@drawable/energy_pattern_bg" >
+
+            <ImageButton
+                android:id="@+id/timedragbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/energy_pattern_5min" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/avgvalueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="110dp"
+            android:gravity="center"
+            android:text="@string/soc_mean_value"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+        
+        <TextView
+            android:id="@+id/avgvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="@string/default_percent2"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/linefrm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/energy_coordinate_bg" >
+
+        <ImageView
+            android:id="@+id/energy_coordinate_point_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/energy_coordinate_point_line"
+            android:visibility="gone" />
+        
+        <com.kandi.customview.LineChartView
+            android:layout_width="match_parent"
+        	android:layout_height="300dip"
+        	android:id="@+id/lineChartView"
+            />
+            
+        <ImageView
+	        android:id="@+id/energy_coordinate_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/energy_coordinate_point"
+            android:visibility="gone" />
+        
+        </FrameLayout>
+
+</RelativeLayout>

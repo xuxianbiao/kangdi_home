@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 设置界面按钮字符定义 -->
+    <string name="ADMIN_SET">Admin Set</string>
+    <string name="GET_BAT_INFO">BM</string>
+    <string name="SET_CHARGER">BC</string>
+    <string name="SET_BCU">GCP</string>
+    <string name="SET_MOTOR">CON</string>
+    <string name="GET_ERROR">FM</string>
+    <string name="GET_WARRING">WM</string>
+    <string name="SET_PASSWORD">PWDS</string>
+    <!-- 电池信息界面按钮定义 -->
+    <!-- 充电参数 -->
+    <string name="bcu_charger_lowtemp">CCT</string>
+    <string name="bcu_charger_lowcell">CCUV</string>
+    <string name="bcu_charger_lowcurr">CCC</string>
+    <string name="bcu_charger_normaltemp">CNT</string>
+    <string name="bcu_charger_normalcell">CNTUV</string>
+    <string name="bcu_charger_normalcurr">CNTC</string>
+    <string name="bcu_charger_hightemp">CHT</string>
+    <string name="bcu_charger_highcell">CHTUV</string>
+    <string name="bcu_charger_highcurr">CHTC</string>
+    <!-- 保护参数 -->
+    <string name="bcu_reduce_cell">CRV</string>
+    <string name="bcu_charger_stopvol">CSTP</string>
+    <string name="bcu_charger_stoptemp">CST</string>
+    <string name="bcu_charger_stopcurr">CSC</string>
+    <string name="bcu_charger_stopcellvol">CSUV</string>
+    <string name="bcu_reduce_time">CRDT</string>
+        <!-- 放电参数 -->
+    <string name="bcu_discharger_lowtemp">DCT</string>
+    <string name="bcu_discharger_lowcellw">DACU</string>
+    <string name="bcu_discharger_lowcelle">DFCU</string>
+    <string name="bcu_discharger_normaltemp">DNT</string>
+    <string name="bcu_discharger_normalcellw">DANTU</string>
+    <string name="bcu_discharger_normalcelle">DFNTU</string>
+    <string name="bcu_discharger_hightemp">DHT</string>
+    <string name="bcu_discharger_highcellw">DAHTU</string>
+    <string name="bcu_discharger_highcelle">DFHTU</string>
+
+    <!-- 放电参数 -->
+    <string name="bcu_lowtemp_warring_cell">DCAUV</string>
+    <string name="bcu_lowtemp_error_cell">DCFUV</string>
+    <string name="bcu_normaltemp_warring_cell">DNTAUV</string>
+    <string name="bcu_normaltemp_error_cell">DNTFUV</string>
+    <string name="bcu_hightemp_warring_cell">DHTAUV</string>
+    <string name="bcu_hightemp_error_cell">DHTFUV</string>
+
+    <!-- 充电机界面按钮字符定义 -->
+    <string name="charger_high_outvoltage">CMOV</string>
+    <string name="charger_high_outcurrent">CMOC</string>
+    <string name="charger_balance_enable">CBE</string>
+    <string name="charger_para_save">PS</string>
+
+    <!-- BCU字符串定义 -->
+    <string name="bcu_rtc_enable">MCRTCE</string>
+    <string name="bcu_rtc_enable_can">MCRTCMCANE</string>
+    <string name="bcu_balance_enable">bcu-BE</string>
+    <string name="bcu_auto_checkloop">MCACLC</string>
+    <string name="bcu_clear_relay">RAR</string>
+    <string name="bcu_relay_check_time">CRADC</string>
+    <string name="bcu_loop_mode">CLT</string>
+    <string name="bcu_min_battery">Min.BN</string>
+    <string name="bcu_leak_warring">IA</string>
+    <string name="bcu_leak_error">IF</string>
+    <!-- togglebotton 字符定义 -->
+    <string name="toggle_on">ON</string>
+    <string name="toggle_off">OFF</string>
+    <!-- 协议使能 -->
+    <string name="protocol_dayou">DEVONP</string>
+    <string name="protocol_wanxiang">WXP</string>
+    <string name="protocol_kangdi">Kandi P</string>
+
+    <!-- 电机控制器界面按钮字符定义 -->
+    <string name="motor_high_speed">Max. Speed</string>
+    <string name="motor_high_nm">Max. Torque</string>
+
+    <!-- 升级界面字符定义 -->
+    <string name="updata_start">Start Upgrade</string>
+    <string name="updata_stop">Stop Upgrade</string>
+    <string name="updata_file">Upgrade File</string>
+    <string name="vendor_info">MI</string>
+    <string name="hard_info">HWV</string>
+    <string name="soft_info">SWV</string>
+    <string name="up_status">Upgrade Status</string>
+    <string name="up_process">Upgrade progress</string>
+    <string name="title_activity_admin">AdminDemo</string>
+    <string name="title_activity_radio">RadioActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    
+    <string name="set_system_time">Setup Time:</string>
+    <string name="set_system_date">Set Date:</string>
+    <string name="set_system_dateformat">Set the Date Format:</string>
+    
+    <string name="set_system_upzaixian">Online upgrade</string>
+    <string name="set_system_uplixian">Offline Upgrade</string>
+    
+    <!-- wifi界面字符串定义 -->
+    <string name="set_system_wifi_ap">Personal Hotspot</string>
+    <string name="set_system_wifi_wlan"> Wi-Fi</string>
+    <string name="wifi_ap_notice_open">Network sharing is turned on</string>
+    <string name="wifi_ap_notice_close">Open the "vehicle hotspot" to share the Internet</string>
+    
+    <string name="wifi_wifi_notice_open">Current internet connection</string>
+    <string name="wifi_wifi_notice_close">Please turn on WIFI first</string>
+    <string name="wifi_wifi_notice_connecting">Obtain an IP address </string>
+    <string name="wifi_wifi_notice_connected">Connection</string>
+    <string name="wifi_wifi_notice_notconnect">Disconnect</string>
+        
+    <!-- wifi网络信息查看界面字符定义 -->
+    <string name="scan_wifi_ignore">Omit this network</string>
+    <string name="scan_wifi_back">Return</string>
+    <!-- wifi密码设置界面字符定义 -->
+    <string name="password_wifi_confirm">Confirm</string>
+    <string name="password_wifi_cancel">Cancel</string>
+    
+    <!-- 升级文件路径定义 -->
+    <string name="Vwcs_LocalInstallUI_Path">storage/udisk/VwcsApk/Ecoc_Vwcs-Y001.apk</string>
+    <string name="Vwcs_LocalInstallSER_Path">storage/udisk/VwcsApk/Ser_Vwcs-Y001.apk</string>
+    
+    
+    <!-- 保存参数弹窗定义 -->
+    <string name="systemchangeDescription">There are changes in system parameters，</string>
+    <string name="saveDescription">Whether to save this operation or not</string>
+    
+    <!-- 密码和升级 -->
+    <string name="manager_info">Admin Inform：</string>
+    <string name="manager">Amin：</string>
+    <string name="manager_pwd">Admin PWD：</string>
+    <string name="device_upgrade">Equipment upgrade：</string>
+    <string name="device_type">Device type：</string>
+    <string name="software_version">Software Version：</string>
+    <string name="hardware_version">Hardware Version：</string>
+    <string name="upgrade_progress">Upgrade progress：</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="upgrade_choose">Upgrade Selection</string>
+    <string name="upgrade_status">Upgrade Status：</string>
+    <string name="manager_pwd_change">APC</string>
+    <string name="input_new_pwd">Please enter a new password:</string>
+    
+    
+    <string name="movie_list_load">Video list loading...</string>
+    <string name="cam_data">20140605</string>
+    <string name="choose_file_deal_way">Please select the file processing method</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="lock">Padlocking</string>
+    <string name="unlock">Unlock</string>
+    <string name="delete">Delete</string>
+    <string name="safe_info">Safety Tips</string>
+    <string name="charg_gun_in">Charging gun insertion</string>
+    <string name="batteries_a">Battery Pack A</string>
+    <string name="batteries_b">Battery Pack B</string>
+    <string name="batteries_c">Battery Pack C</string>
+    <string name="batteries_d">Battery Pack D</string>
+    <string name="percent">86%</string>
+    <string name="station_reached_ceil_info">The number of radio stations for favorites has reached the upper limit, please delete some of the favorites</string>
+    <string name="sure">Confirm</string>
+    <string name="default_time">14:44</string>
+    <string name="default_data">2015-5-30</string>
+    <string name="default_dataday">Fri</string>
+    <string name="default_degree">16°</string>
+    <string name="default_data2">06/18/2014</string>
+    <string name="default_weather">Hangzhou. Clear to overcast</string>
+    <string name="no_weather">No Weather Data</string>
+    <string name="demonstration_mode">Demo Mode</string>
+    <string name="station_searching">Radio Searching...</string>
+    <string name="device_onloading">Equipment loading...</string>
+    <string name="net_name">Network Name: K17_Ap                   ></string>
+    <string name="net_pwd">Network Password:                                 ></string>
+    <string name="connect_device">Connected Device :</string>
+    <string name="dump_energy">Dump Energy:</string>
+    <string name="default_percent">---%</string>
+    <string name="default_percent2">50%</string>
+    <string name="total_voltage">Total Voltage:</string>
+    <string name="total_current">Total Current:</string>
+    <string name="cell_total_voltage">Unit maximum:</string>
+    <string name="cell_low_voltage">Unit minimum:</string>
+    <string name="total_degree">Max.Temp:</string>
+    <string name="low_degree">Min.Temp:</string>
+    <string name="insulation_r">IR:</string>
+    <string name="title_soh">SOH:</string>
+    <string name="title_hardware_version">Hardware Version:</string>
+    <string name="title_software_version">Software Versions:</string>
+    <string name="title_charge_count">Cycle Count:</string>
+    <string name="title_charge_state">State of Charge:</string>
+    <string name="title_battery_safe">Battery Safety :</string>
+    <string name="unit_v">--V</string>
+    <string name="unit_a">--A</string>
+    <string name="unit_mv">---mV</string>
+    <string name="unit_degree">--°C</string>
+    <string name="unit_insulation_r">----KR</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_default_null">---S/N: (N/A)</string>
+    <string name="soc_mean_value">SOC Mean Value:</string>
+    
+    <!-- 背景图片更换 -->
+    <string name="moon_under_sea">Sunrise at Sea</string>
+    <string name="distance_road">Distant way</string>
+    <string name="still_water_galaxy">West Lake</string>
+    <string name="the_snow">Bright starfalls</string>
+    <string name="moonlit_clouds">Snowfield</string>
+    <string name="stars_dawn">Moonlight Cloud</string>
+    
+    <!-- 音乐列表 -->
+    <string name="popular">Fashion</string>
+    
+    <!-- 浏览器 -->
+    <string name="kangdi">Kandi</string>
+    <string name="kangdi_address">http://www.kandigroup.com.cn/</string>
+    <string name="navigation">Navigation</string>
+    <string name="navigation_address">http://hao.uc.cn/</string>
+    <string name="taobao">Taobao</string>
+    <string name="taobao_address">https://www.taobao.com</string>
+    <string name="alipay">Alipay</string>
+    <string name="alipay_address">https://authzui.alipay.com/login/index.htm</string>
+    <string name="antfortune">Ant Treasure</string>
+    <string name="antfortune_address">http://www.antfortune.com</string>
+    <string name="xiamimusic">Xiami Music</string>
+    <string name="xiamimusic_address">http://www.xiami.com</string>
+    <string name="baidu">Baidu</string>
+    <string name="xinlang">Sina</string>
+    <string name="xinlang_address">https://ent.sina.cn</string>
+    <string name="tengxun">Tencent</string>
+    <string name="google_address">http://www.google.cn/</string>
+    <string name="google">Google</string>
+    <string name="facebook_address">http://www.facebook.com</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter_address">http://www.twitter.com</string>
+    <string name="twitter">Twitter</string>
+    <string name="youtobe_address">http://www.youtube.com</string>
+    <string name="youtobe">YouTobe</string>
+    <string name="amazon_address">http://www.amazon.com</string>
+    <string name="amazon">Amazon</string>
+    <string name="xiecheng">CTRP-US</string>
+    <string name="public_comment">Dianping Holdings Ltd</string>
+    <string name="public_comment_address">http://www.dianping.com</string>
+    <string name="input_net_address">Please enter the URL</string>
+    <string name="delete_yes_no">Whether to delete or not?</string>
+    <string name="my_collection">My favorite</string>
+    <string name="history_record">History</string>
+    <string name="baidu_address">http://www.baidu.com</string>
+    <string name="prompt">Hint</string>
+    <string name="now_use_networks">What is used at present is a cellular network!</string>
+    <string name="makesure">Confirm</string>
+    <string name="okhttp">Please enter the correct URL</string>
+    
+    <!-- 天气预报 -->
+    <string name="input_city">Please enter the city</string>
+    <string name="sunny">Sun</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="snow">Snow</string>
+    <string name="rain">Rain</string>
+    <string name="thunder">Thunder</string>
+    <string name="shade">Cloudy</string>
+    <string name="position">Positioning</string>
+    
+    
+    <!-- 语音 -->
+    <string name="next_song">Next track</string>
+    <string name="next_fre">Next frequency modulation</string>
+    <string name="next_radio">Next radio station</string>
+    <string name="pre_song">Previous</string>
+    <string name="pre_fre">Previous frequency modulation</string>
+    <string name="pre_radio">Previous broadcasting station</string>
+    <string name="obj_lamp">Headlamp</string>
+    <string name="obj_farlamp">High Beam</string>
+    <string name="pause_song">Pause</string>
+    <string name="stop_song">Stop</string>
+    <string name="play_song">Play</string>
+    <string name="play">play</string>
+    <string name="today">Today</string>
+    <string name="temperature">,Temp.</string>
+    <string name="reach">To</string>
+    
+    <!-- Toast提示 -->
+    <string name="usb_in">USB has been inserted</string>
+    <string name="usb_out">USB has been pulled out</string>
+    <string name="getbattarycellv_failed">Failed to get Cell unit voltage information! (code=</string>
+    <string name="getbattarycellt_failed">Failed to get Cell unit voltage information! (code=</string>
+    <string name="getbattaryinfo_failed">Failed to get Cell information! Err=</string>
+    
+    <!-- ServiceManger -->
+    <string name="back_service_disable">(Back-end service unavailable)</string>
+    <string name="back_service_not_start">Warning: Back-End service not started!(002)</string>
+    
+    <!-- 首页page1 -->
+    <string name="week">Week</string>
+    <string name="week2">Week</string>
+    <string name="ing">Be being</string>
+    
+    <!-- 充电状态 -->
+    <string name="charggun_in">Charging-gun-inserted</string>
+    <string name="charggun_out">Charging-gun-pulled</string>
+    <string name="charging">Charging</string>
+    <string name="charg_stoped">Charging stopped</string>
+    <string name="charg_error">Abnormal Charging</string>
+    <string name="charg_unknow">Unknown charging event</string>
+    
+    <!-- 能量管理 -->
+    <string name="charging2">Charging</string>
+    <string name="stop_charg">Stop Charging</string>
+    <string name="safe">Safety</string>
+    <string name="warn">Alarm</string>
+    <string name="trouble">Fault</string>
+    
+    <!-- 日期格式-->
+    <string name="year_month_day">yyyy-MM-dd</string>
+    
+    <!-- 工具类 -->
+    <string name="unknown">Unknown</string>
+    <string name="china_mobile">China Mobile</string>
+    <string name="china_unicom">China Unicom</string>
+    <string name="china_telecom">China Telecom</string>
+    <string name="net_error_tocheck">Network access failed, please check the networking equipment of your computer!</string>
+    
+    <!-- 摄像头 -->
+    <string name="deleted_success">Deleted Successfully</string>
+    <string name="default_counttime">00:00</string>
+    <string name="splite">/</string>
+    
+    <!-- 电话 -->
+    <string name="calling">Calling...</string>
+    <string name="please_conn_blue">Please connect to bluetooth</string>
+    <string name="call_end">Call End</string>
+    <string name="sim_unin">No SIM cards inserted</string>
+    <string name="unknow">Unknown</string>
+    
+    <!-- 收音机 -->
+    <string name="searching">Searching</string>
+    <string name="fm_single">FM</string>
+    <string name="fm_unit">MHz</string>
+     <string name="fm_defaultefreq">96.8</string>
+     <string name="fm_freq">FM 101.6</string>
+    
+    <!-- default -->
+    <string name="default_cam_time1">12:00/</string>
+    <string name="default_cam_time2">13:00</string>
+    <string name="default_music_title">MUSIC TITLE</string>
+    <string name="default_fm_fre">101.1</string>
+    <string name="default_fm">FM</string>
+    <string name="default_nothing"></string>
+    <string name="default_percent3">80%</string>
+    <string name="K17">K17</string>
+    <string name="onekeynum">4006070000</string>
+    <string name="hotlinenum">Hot Line: 400-607-0000</string>
+    <string name="onekeyrealnum">4006070000,0</string>
+    <string name="callingtime">Call Time：</string>
+    
+    <!-- 分离蓝牙模块 -->
+    <string name="now_version">1.2</string>
+    <string name="version1_2">1.2</string>
+    <string name="version1_3">1.3</string>
+    <string name="yet_open_function">The function has not yet opened</string>
+    <string name="btacunconnect">Bluetooth media not connected</string>
+    
+    
+    <string name="app_name">Kandi Car Home</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="contentDescription">contentDescription</string>
+    
+    <!-- 蓝牙音乐 -->
+    <string name="bluetooth_music">Bluetooth Music</string>
+    
+    <!-- 音乐列表删除 -->
+    <string name="txt_import">Import</string>
+    <string name="txt_delete">Delete </string>
+    <string name="txt_all">All</string>
+    <string name="txt_export">Export</string>
+    <string name="txt_cancel">Cancel</string>
+    
+    <!-- 文件拷贝路径 -->
+    <string name="usb_path">/storage/udisk/</string>
+    <string name="local_music_path">/sdcard/Music/</string>
+    <string name="local_movie_path">/sdcard/Movies/</string>
+    <string name="moviepath">moviepath</string>
+    <string name="musicpath">musicpath</string>
+    <string name="choose">choose</string>
+    <string name="isusb">isusb</string>
+    <string name="map">map</string>
+    <string name="sdcard_isfull">Insufficient storage space</string>
+    
+    <!-- web下载 -->
+    <string name="conn_wrong">Insufficient storage space</string>
+    <string name="save_sdcard_success">Has been saved into SD card.</string>
+    <string name="loading_for_wait">Loading, Please Wait…</string>
+    <string name="downloading">Start Downloading</string>
+    
+    <!-- 车速友好提醒 -->
+    <string name="speed_max">The car is running at high speed,you can not do anything out of safety</string>
+	
+    <string name="volume">VOL</string>
+	
+    <!-- 固件升级 -->
+    <string name="upgrading">Device upgrading</string>
+    <string name="upsuccessed">Upgrade successful</string>
+    <string name="upfailed">Upgrade failed</string>
+    <string name="uptimeout">Upgrade timeout</string>
+    <string name="upover">Upgrade completed</string>
+    <string name="upcondition">To meet the upgrade conditions (speed is not 0 or the gear is not N)</string>
+    <string name="upsubmit">Upgrade</string>
+    <string name="upcancel">Cancel</string>
+    <string name="updelay">Suspended</string>
+    <string name="firmup">ECU Fireware Update</string>
+    <string name="firmup_status">ECU Fireware Status</string>
+    <string name="upcompete">Finish</string>
+
+</resources>

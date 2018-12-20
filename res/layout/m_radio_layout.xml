@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp" >
+
+        <ToggleButton
+            android:id="@+id/btnRadioPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="85dp"
+            android:background="@drawable/radio_toggle"
+            android:textColor="@color/white"
+            android:textOff=""
+            android:textOn="" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="85dp"
+            android:background="@null"
+            android:src="@drawable/radio_junhen_btn_selector"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textDemoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnRadioPower"
+            android:layout_alignBottom="@+id/btnRadioPower"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="135dp"
+            android:text="@string/demonstration_mode"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-20dp"
+        android:background="@null"
+        android:src="@drawable/tap_line" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        layout="@layout/radio_main_layout" />
+
+    <TextView
+        android:id="@+id/textViewSeeking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/station_searching"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnRadioSeekBackward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnRadioSeekFoward"
+	        android:background="@null"
+            android:src="@drawable/fm_ctrl_next_l_off_normal"
+           />
+
+        <ImageButton
+            android:id="@+id/btnRadioSeekFoward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:background="@null"
+            android:src="@drawable/fm_ctrl_next_r_off_normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

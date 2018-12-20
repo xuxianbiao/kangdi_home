@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_zuixiao_music_bg"
+    android:gravity="center_vertical" >
+
+    <com.kandi.widget.MediaPlayertextview
+        android:id="@+id/musicpath"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="-20dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/musictime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_counttime"
+            android:textColor="#ffffff"
+            
+            android:textSize="16sp" />
+	<!-- android:thumb="@drawable/thumb" -->
+        <SeekBar
+            android:id="@+id/musictimeline"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:maxHeight="8.0dip"
+            android:minHeight="8.0dip"
+            android:progressDrawable="@drawable/seekbar_background"
+            android:thumb="@drawable/thumb_bar"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            
+             />
+
+        <TextView
+            android:id="@+id/musictime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_counttime"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/home_small_music_prev_selector" />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@null"
+            android:src="@drawable/home_small_music_pause_selector" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@null"
+            android:src="@drawable/home_small_music_next_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

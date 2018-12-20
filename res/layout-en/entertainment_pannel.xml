@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/deviceconfigure_mainbg"
+    android:background="@drawable/music_file_bg"
+     >
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="0dp"
+	    >
+	    <ImageButton 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/wirelessconfigurebtn"
+		    android:textSize="15sp"
+		    android:minHeight="1dp"
+         	android:minWidth="1dp"
+         	android:src="@drawable/music_tap_videoplay_selector"
+		    />
+		<ImageButton 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/directconfigurebtn"
+		    android:textColor="@android:color/white"
+		    android:textSize="15sp"
+		    android:minHeight="1dp"
+         	android:minWidth="1dp"
+         	android:src="@drawable/music_tap_musicplay_selector"
+		    />
+	</LinearLayout>
+    
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/fragment_content"
+	    android:background="#00000000"
+	    >
+		
+	
+	</FrameLayout>
+</LinearLayout>

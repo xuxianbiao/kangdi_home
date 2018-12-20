@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/buttom_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true" />
+    
+    <RelativeLayout
+        android:id="@+id/buttom_shadow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shoots_bg_02"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+            
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="30dp"
+	            android:layout_marginTop="30dp"
+	            android:text="@string/hotlinenum"
+	            android:textSize="30sp"
+	            android:textColor="@color/white" />
+	        
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_below="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+	        
+	        <TextView
+	            android:id="@+id/converse_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="30dp"
+	            android:textSize="30sp"
+	            android:textColor="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_call_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/number_sim_call_btn_selector" />
+        
+        <Button
+            android:id="@+id/btn_call_hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/number_sim_hangup_btn_selector"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</FrameLayout>
