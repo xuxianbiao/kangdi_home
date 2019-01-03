@@ -305,10 +305,14 @@ public class MainPageFragment1 extends Fragment {
 	private void setTimeAndDate() {
 		SimpleDateFormat dateFormat, timeFormat;
 		java.text.DateFormat data=DateFormat.getDateFormat(this.getActivity());
-		
-		dateFormat = new SimpleDateFormat(((SimpleDateFormat) data).toPattern()+"EEEE");
+		String datapattern = ((SimpleDateFormat) data).toPattern();
+		if(datapattern.equals("M/d/y")){
+			datapattern = "MM/dd/yyyy";
+		}else if(datapattern.equals("y-M-d")){
+			datapattern = "yyyy-MM-dd";
+		}
+		dateFormat = new SimpleDateFormat(datapattern+"EEEE");
 //		timeFormat = new SimpleDateFormat("HH:mm");
-		
 		Date date = new Date(System.currentTimeMillis());
 		String dateStr = dateFormat.format(date);
 		dateStr = dateStr.replace(
